@@ -1,16 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fenet | Portfolio</title>
+
+  <!-- Font Awesome for social‑media icons -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
-  <li> Home</li>
-  <li> service</li>
-  <li></li>
-  <li></li>
-  <li></li>
-    
+
+  <!-- ── Navigation (top‑right) ─────────────────────────── -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../images/logo.png" alt="Logo" />
+    </div>
+    <ul class="nav-menu">
+      <li><a href="#home"      class="nav-link active">Home</a></li>
+      <li><a href="#about"     class="nav-link">About</a></li>
+      <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+      <li><a href="#services"  class="nav-link">Services</a></li>
+      <li><a href="#contact"   class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO / HOME ────────────────────────────────────── -->
+  <section id="home" class="hero">
+    <div class="hero-left">
+      <!-- three‑line greeting -->
+      <h2 class="greet-small">Hello, It’s Me</h2>
+      <h1 class="greet-name">Fenet Gizaw</h1>
+      <p class="greet-role">
+        And I’m <span id="typed-role"></span><span class="cursor">|</span>
+      </p>
+
+      <!-- dynamic description -->
+      <p id="role-description" class="role-desc hide"></p>
+
+      <!-- social icons rise up in order -->
+      <ul class="social-links">
+        <li style="--i:1">
+          <a href="https://www.linkedin.com/in/fenet-gizaw-b47003341" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li style="--i:2">
+          <a href="https://github.com/your_username" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li style="--i:3">
+          <a href="https://www.youtube.com/@NextGenDevelopers" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+        <li style="--i:4">
+          <a href="https://twitter.com/your_username" aria-label="Twitter">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+        </li>
+        <li style="--i:5">
+          <a href="mailto:your@email.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </li>
+      </ul>
+
+      <!-- buttons animate up after icons -->
+      <a href="#about" class="btn more-btn" style="--i:6">More About Me</a>
+      <a href="../files/Fenet_Gizaw_CV.pdf" class="download-btn" download style="--i:7">
+        Download CV
+      </a>
+    </div>
+
+    <!-- round photo with neon ring -->
+    <div class="hero-right">
+      <div class="photo-wrapper">
+        <img src="../images/OIP.webp" alt="Fenet Gizaw" class="hero-photo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ── OFF‑CANVAS “ABOUT ME” PANEL ───────────────────── -->
+  <aside id="about-panel">
+    <button id="close-about">&times;</button>
+    <h2>About Me</h2>
+    <p>[ Put your biography or any text here ]</p>
+  </aside>
+
+  <!-- ── Scripts ────────────────────────────────────────── -->
+  <script src="../script.js"></script>
 </body>
 </html>
+
+
+
+  
