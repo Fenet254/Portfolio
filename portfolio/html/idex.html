@@ -4,17 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fenet | Portfolio</title>
-
-  <!-- Font Awesome for social‑media icons -->
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-  <!-- Main stylesheet -->
   <link rel="stylesheet" href="../css/style.css" />
-</head>
+  <link rel="stylesheet" href="../css/service.css" />
+  <link rel="stylesheet" href="../css/contact.css" />
+  <link rel="stylesheet" href="../css/portfo io.css" />
+  </head>
 <body>
-
-  <!-- ── Navigation (top‑right) ─────────────────────────── -->
   <nav class="navbar">
     <div class="logo">
       <img src="../images/logo.png" alt="Logo" />
@@ -27,21 +24,14 @@
       <li><a href="#contact"   class="nav-link">Contact</a></li>
     </ul>
   </nav>
-
-  <!-- ── HERO / HOME ────────────────────────────────────── -->
-  <section id="home" class="hero">
+<section id="home" class="hero" class="bg‑main">
     <div class="hero-left">
-      <!-- three‑line greeting -->
-      <h2 class="greet-small">Hello, It’s Me</h2>
+      <h2 class="greet-small">Hi there ,its me</h2>
       <h1 class="greet-name">Fenet Gizaw</h1>
       <p class="greet-role">
         And I’m <span id="typed-role"></span><span class="cursor">|</span>
       </p>
-
-      <!-- dynamic description -->
       <p id="role-description" class="role-desc hide"></p>
-
-      <!-- social icons rise up in order -->
       <ul class="social-links">
         <li style="--i:1">
           <a href="https://www.linkedin.com/in/fenet-gizaw-b47003341" aria-label="LinkedIn">
@@ -69,34 +59,122 @@
           </a>
         </li>
       </ul>
-
-      <!-- buttons animate up after icons -->
       <a href="#about" class="btn more-btn" style="--i:6">More About Me</a>
       <a href="../files/Fenet_Gizaw_CV.pdf" class="download-btn" download style="--i:7">
         Download CV
       </a>
     </div>
-
-    <!-- round photo with neon ring -->
     <div class="hero-right">
       <div class="photo-wrapper">
         <img src="../images/OIP.webp" alt="Fenet Gizaw" class="hero-photo" />
       </div>
     </div>
   </section>
-
-  <!-- ── OFF‑CANVAS “ABOUT ME” PANEL ───────────────────── -->
   <aside id="about-panel">
     <button id="close-about">&times;</button>
     <h2>About Me</h2>
     <p>[ Put your biography or any text here ]</p>
   </aside>
+  <!--  … your Home section stays exactly as it is …  -->
+<!-- ===== Service Section (v2) ===== -->
 
-  <!-- ── Scripts ────────────────────────────────────────── -->
+<!-- ===== Services Section ===== -->
+<section id="services" class="services-section">
+  <div class="container">
+    <h2 class="section-title">Services</h2>
+    <p class="section-tagline">How I can help you grow</p>
+
+    <div class="services-grid">
+      <!-- Card 1 -->
+      <article class="service-card">
+        <div class="icon"><i class="fas fa-laptop-code"></i></div>
+        <h3>Full‑Stack Development</h3>
+        <p>React, Node & MySQL apps from idea to deployment.</p>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="service-card">
+        <div class="icon"><i class="fas fa-paint-brush"></i></div>
+        <h3>UI / UX Design</h3>
+        <p>Pixel‑perfect, accessible interfaces that delight users.</p>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="service-card">
+        <div class="icon"><i class="fas fa-plug"></i></div>
+        <h3>API Integration</h3>
+        <p>Secure REST / GraphQL integrations & automations.</p>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="service-card">
+        <div class="icon"><i class="fas fa-chalkboard-teacher"></i></div>
+        <h3>Mentoring & Tutorials</h3>
+        <p>Hands‑on workshops and 1‑to‑1 sessions to level up.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Font Awesome kit (swap to your own if you like) -->
+<script src="https://kit.fontawesome.com/a2e0e9f6f7.js" crossorigin="anonymous" defer></script>
+
+<!-- ==========  CONTACT  ========== -->
+<section id="contact" class="visible">
+  <h2 class="section-title">Get in Touch</h2>
+
+  <form id="contactForm" autocomplete="off">
+    <div class="input-row">
+      <div class="input-group">
+        <input type="text" id="name" required>
+        <label for="name">Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" id="email" required>
+        <label for="email">Email</label>
+      </div>
+    </div>
+
+    <div class="input-row">
+      <div class="input-group">
+        <input type="tel" id="phone" pattern="[0-9+ ]{7,}" required>
+        <label for="phone">Phone</label>
+      </div>
+
+      <div class="input-group">
+        <select id="topic" required>
+          <option value="" disabled selected hidden></option>
+          <option>Project Collaboration</option>
+          <option>Freelance Opportunity</option>
+          <option>Speaking / Workshop</option>
+          <option>Other</option>
+        </select>
+        <label for="topic">Topic</label>
+      </div>
+    </div>
+
+    <div class="input-group">
+      <input type="text" id="subject" required>
+      <label for="subject">Subject</label>
+    </div>
+
+    <div class="input-group textarea">
+      <textarea id="message" rows="5" required></textarea>
+      <label for="message">Message</label>
+    </div>
+
+    <button type="submit" class="contact-btn">Send Message</button>
+  </form>
+
+  <!-- Toast container -->
+  <div id="toast" class="toast"></div>
+</section>
+
+
   <script src="../script.js"></script>
 </body>
 </html>
-
 
 
   
