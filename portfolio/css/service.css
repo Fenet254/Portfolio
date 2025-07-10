@@ -1,9 +1,22 @@
 /* ---------- Layout backbone (unchanged) ---------- */
-.container{width:min(90%,1200px);margin-inline:auto;padding-block:6rem;}
-.services-section{position:relative;background:rgba(0 0 0/.2);
-  backdrop-filter:blur(4px);border-radius:2rem;margin-block:4rem;overflow:hidden;}
-.services-section::before{content:"";position:absolute;inset:0;border-radius:inherit;
-  box-shadow:inset 0 0 24px rgba(255 255 255/.05);pointer-events:none;}
+
+.services-section{
+  position:relative;
+  background-color: rgba(0 0 0/.6);
+  backdrop-filter:blur(4px);
+  border-radius:2rem;
+  margin-block:4rem;
+  overflow:hidden;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 0 60px rgba(59, 130, 246, 0.2);
+}
+
+.services-section::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:inherit;
+  box-shadow:inset 0 0 24px rgba(255 255 255/.05);
+  pointer-events:none;}
 
 .section-title{font-size:2.5rem;font-weight:700;text-align:center;margin-bottom:.25rem}
 .section-tagline{text-align:center;font-size:1.05rem;opacity:.75;margin-bottom:3rem}
@@ -58,7 +71,7 @@
 }
 /* ---------- Hover interaction ---------- */
 .service-card:hover {
-  transform: translateY(-12px) scale(2.15);   /* ← bigger! */
+  transform: translateY(-12px) scale(.15);   /* ← bigger! */
   box-shadow: 0 38px 70px rgba(0, 170, 255, 0.40);
   border-color: #00aaff;
   z-index: 2;                                 /* keeps it above neighbours */
@@ -66,3 +79,5 @@
 .service-card:hover::after {
   opacity: 1;                          /* neon aura switches on */
 }
+
+

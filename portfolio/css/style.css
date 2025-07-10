@@ -1,5 +1,5 @@
 /* ---------- Layout backbone (unchanged) ---------- */
-.container{width:min(90%,1200px);margin-inline:auto;padding-block:6rem;}
+
 .services-section{position:relative;background:rgba(0 0 0/.2);
   backdrop-filter:blur(4px);border-radius:2rem;margin-block:4rem;overflow:hidden;}
 .services-section::before{content:"";position:absolute;inset:0;border-radius:inherit;
@@ -72,10 +72,11 @@
       display: none !important;
     }
   body::before{
+    
     content:"";
     position:fixed;          /* stays still while you scroll */
     inset:0;                 /* full‑viewport */
-    background:url("../images/desktop-wallpaper-portfolio-thumbnail.jpg") center/cover no-repeat fixed;
+    background:url("../images/Screenshot\ 2025-07-10\ 141806.png") center/cover no-repeat fixed;
     /* optional dark tint for readability */
     background-blend-mode:overlay;
     background-color:rgba(0,0,0,.55);
