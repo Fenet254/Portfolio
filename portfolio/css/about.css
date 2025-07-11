@@ -5,31 +5,19 @@ body {
     background: #0b0c10;
     color: #fff;
   }
+
 .containr{
-  padding-right: 300px;
+  padding-top: 100px;
+ margin-left:70px;
+  margin-right: 70px;
   padding-bottom: 300px;
   background-color: rgba(0 0 0/.6); /* dark blue-gray like other sections */
   border-radius: 30px;
-  margin-left:80px;
- padding-left: 20px;
-  margin-right: 50px;
-  margin-bottom:400px ;
-  margin-top: 400px;
-  box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 0 60px rgba(59, 130, 246, 0.2);
-}
-  .containr{
-
-
-  min-height: 100vh;
-  width: 87%;
- 
-
-  box-sizing: border-box;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 0 60px rgba(59, 130, 246, 0.2);
+     box-sizing: border-box;
   position: relative;
   z-index: 1;
 }
-  
- 
   .about-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
