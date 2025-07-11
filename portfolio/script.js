@@ -304,5 +304,32 @@ const obserer = new IntersectionObserver((entries) => {
 document.querySelectorAll(".bar").forEach((bar) => {
   observer.observe(bar);
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const topProjects = document.querySelectorAll(".project-card.top");
+  const bottomProjects = document.querySelectorAll(".project-card.bottom");
+
+  const observerOptions = {
+    threshold: 0.3,
+  };
+
+  const projectObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.style.animationPlayState = "running";
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  topProjects.forEach((proj) => {
+    proj.style.animationPlayState = "paused";
+    projectObserver.observe(proj);
+  });
+
+  bottomProjects.forEach((proj) => {
+    proj.style.animationPlayState = "paused";
+    projectObserver.observe(proj);
+  });
+});
 
   
