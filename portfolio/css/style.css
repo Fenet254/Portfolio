@@ -33,12 +33,21 @@
     content:none
   }
   .nav-link::after{
-    content:'';position:absolute;left:0;right:0;bottom:0;height:3px;
-    background:transparent;border-radius:2px;
+    content:'';
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:3px;
+    background:transparent;
+    border-radius:2px;
     transition:background-color .3s,box-shadow .3s;
   }
   .nav-link:hover{
-    color:#007bff;font-size:20px;
+    color:#007bff;
+    
+    
+    font-size:20px;
     text-shadow:1px 1px 3px rgba(0,123,255,.5);
   }
   .nav-link:hover::after{
@@ -57,7 +66,7 @@
     padding:0 7vw;
   }
   .hero-left{
-    margin-left: 90px;
+    margin-left: 130px;
     flex:1;
     max-width:600px;
     padding-left:3rem;   /* ← push everything 3 rem from the left */

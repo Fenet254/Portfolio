@@ -42,8 +42,9 @@
 
 /* Hover Effects */
 .project-card:hover img {
-  transform: scale(1.1);
-  box-shadow: 0 0 25px #00f0ff;
+  transform: scale(1.1); /* 🔸 grow image */
+  box-shadow: 0 0 25px rgba(9, 78, 152, 0.9); /* 🔸 bolder glow */
+  z-index: 1;
 }
 
 .project-card:hover .overlay {
@@ -110,4 +111,58 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+.project-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 123, 255, 0.6);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 0px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.9); /* 🔹 subtle blue glow by default */
+}
+
+/* Triangle Description Overlay */
+.project-overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 100% solid transparent;
+  border-top: 100% solid white; /* ✅ pure white background */
+  transition: all 0.6s ease;
+  z-index: 2;
+  box-shadow: 0 0 30px rgba(0, 123, 255, 0.7); /* ✅ glowing blue effect */
+  pointer-events: none;
+}
+
+.project-card:hover .project-overlay {
+  bottom: 0;
+}
+
+/* Optional text inside triangle (appears on top) */
+.project-desc {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #004aad;
+  font-weight: bold;
+  font-size: 14px;
+  opacity: 0;
+  z-index: 3;
+  transition: opacity 0.4s ease 0.3s;
+}
+
+.project-card:hover .project-desc {
+  opacity: 1;
 }
