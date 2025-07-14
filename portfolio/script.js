@@ -1,8 +1,4 @@
-/* =======================================================================
-   main.js  — Service cards + About‑Me tabs
-   ======================================================================= */
 
-/* ──────────────── 1. NAVBAR ACTIVE-LINK HANDLER ─────────────── */
 const navLinks = document.querySelectorAll(".nav-link");
 navLinks.forEach((link) => {
   link.addEventListener("click", function () {
@@ -10,24 +6,22 @@ navLinks.forEach((link) => {
     this.classList.add("active");
   });
 });
-
-/* ──────────────── 2. TYPEWRITER + CAROUSEL ─────────────── */
 const roles = [
   {
     text: "Full‑stack Web Developer",
-    desc: "I am a full-stack web developer capable of building complete websites.",
+    desc: "I craft dynamic,responsive web apps from front to back,blending clean design with smart functionality using modern tools like React, Node.js, and MySQL",
   },
   {
-    text: "YouTuber",
-    desc: "Creating content on tech, motivation, and development.",
+    text: "AI/ML Enthusiast",
+    desc: "I explore the power of intelligent systems,training models, analyzing data, and building smart solutions that learn, adapt, and solve real-world problems",
   },
   {
-    text: "Graphics Designer",
-    desc: "Passionate about visual creativity and design.",
+    text: "Software Engineer",
+    desc: "As a Software Engineering student, I’m passionate about building real-world systems that are scalable,efficient,and user-focused,combining theory with hands-on development.",
   },
   {
-    text: "Web Designer",
-    desc: "Building aesthetic and user-friendly web interfaces.",
+    text: " YouTuber",
+    desc: " I create tech-focused content to inspire and support fellow developers — sharing tutorials, project breakdowns, and real talk for students and aspiring engineers.",
   },
 ];
 
