@@ -216,14 +216,14 @@
     width:350px;
     height:100vh;
     background:#111;
-    color:#ddd;
+    color:#040202;
     padding:2rem;
     transition:right .5s ease;
     box-shadow:-6px 0 20px rgba(0,0,0,.5);z-index:200
   }
   #about-panel.open{right:0}
   #about-panel h2{
-    color:#0af;
+    color:rgb(0, 5, 8);
     margin-bottom:.8rem
   }
   #close-about{
@@ -231,7 +231,7 @@
     top:10px;
     left:10px;
     font-size:1.8rem;
-    color:#fff;
+    color:#040202;
     background:none;
     border:none;
     cursor:pointer

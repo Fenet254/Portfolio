@@ -18,36 +18,46 @@
   #contactForm{max-width:700px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
   
   /* two‑column rows on wide screens */
-  .input-row{display:flex;gap:28px}
+  .input-row{display:flex;
+    gap:28px
+  }
   .input-row .input-group{flex:1}
   
   /* shared styling */
-  .input-group{position:relative}
-  .input-group input,
-  .input-group textarea,
-  .input-group select{
-    width:100%;padding:14px 18px;background:#1a1a1a;color:#fff;
-    border:2px solid #333;border-radius:10px;font-size:1rem;
+  .input-group{
+    position:relative
+  }
+  .input-group input,.input-group textarea, .input-group select{
+    width:100%;
+    padding:14px 18px;
+    background:#1a1a1a;
+    color:#fff;
+    border:2px solid #333;
+    border-radius:10px;
+    font-size:1rem;
     outline:none;transition:border .25s,box-shadow .25s;
     appearance:none;   /* for select */
   }
-  .input-group select{cursor:pointer}
+  .input-group select{
+    cursor:pointer
+  }
   .input-group label{
     position:absolute;left:18px;top:50%;transform:translateY(-50%);
     color:#888;font-size:.95rem;pointer-events:none;transition:.25s;
   }
   
-  /* floating label trigger */
+  
   input:focus + label,
   input:not(:placeholder-shown) + label,
   textarea:focus + label,
   textarea:not(:placeholder-shown) + label,
   select:focus + label,
   select:not([value=""]) + label{
-    top:0;transform:translateY(-50%) scale(.85);
+    top:0;
+    transform:translateY(-50%) scale(.85);
     background:#1a1a1a;padding:0 6px;color:#00aaff;
   }
-  .input-group.textarea label{top:18px;transform:none}
+
   
   input:focus, textarea:focus, select:focus{
     border-color:#00aaff;box-shadow:0 0 8px rgba(0,170,255,.4);
