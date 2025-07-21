@@ -57,7 +57,6 @@
     background:#007bff;box-shadow:0 0 5px 1.5px rgba(0,123,255,.4);
   }
   
-  /* ────────── 3. Hero layout ───────────────────────────── */
   .hero{
     min-height:100vh;display:flex;align-items:center;justify-content:center;
     padding:0 7vw;
@@ -122,7 +121,6 @@
     transform:translateX(-100%);
     opacity:0
   }
-  
   .social-links{
     display:flex;
     gap:30px;
@@ -164,8 +162,8 @@
     width:400px;
     height:400px;
     border-radius:50%;
-  }
- 
+  } 
+
   .navbar{
       position:fixed;                 /* sticks to top */
       top:0;left:0;width:100%;
@@ -177,7 +175,6 @@
       box-shadow:0 4px 12px rgba(0,0,0,.25); 
       z-index:100;
     }
-    
     .logo img{
       height:40px;       
       margin-left:15px;  
@@ -207,8 +204,6 @@
     0%,100%{transform:translateY(0)}
     50%   {transform:translateY(-18px)}
   }
-  
-  
   #about-panel{
     position:fixed;
     top:0;
@@ -266,4 +261,5 @@
     text-decoration:none;
     color:inherit
   }
+  
   
