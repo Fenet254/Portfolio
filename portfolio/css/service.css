@@ -9,7 +9,16 @@
   overflow:hidden;
   box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 0 60px rgba(59, 130, 246, 0.2);
 }
+.service-card .icon i {
+  transition: color 0.35s ease, text-shadow 0.35s ease;
+}
 
+.service-card:hover .icon i {
+  color: #00aaff; /* same neon blue as your aura */
+  text-shadow: 0 0 12px rgba(0, 170, 255, 0.8),
+               0 0 24px rgba(0, 170, 255, 0.6),
+               0 0 36px rgba(0, 170, 255, 0.4);
+}
 .services-section::before{
   content:"";
   position:absolute;
