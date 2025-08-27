@@ -4,6 +4,10 @@ body {
   background-color: #0f172a;
   color: #ffffff;
 }
+/* make all skill icons black */
+.bar i {
+  color: black !important;
+}
 
 .skills-section {
   margin-top: 600px;
