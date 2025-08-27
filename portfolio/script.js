@@ -103,7 +103,6 @@ window.addEventListener("DOMContentLoaded", () => {
     if (sectionTop < windowHeight * 0.75 && !animated) {
       animated = true;
 
-      // Animate bars
       bars.forEach((bar, i) => {
         const percent = parseInt(bar.dataset.percent);
         bar.style.setProperty("--bar-width", "0%");
@@ -111,7 +110,6 @@ window.addEventListener("DOMContentLoaded", () => {
         bar.style.opacity = "1";
         bar.style.transform = "translateY(0)";
 
-        // Animate blue fill gradually
         setTimeout(() => {
           bar.style.setProperty("--bar-width", percent + "%");
         }, i * 300);
@@ -128,7 +126,6 @@ window.addEventListener("DOMContentLoaded", () => {
         }, 20);
       });
 
-      // Animate professional skills
       circles.forEach((circle, i) => {
         const wave = circle.querySelector(".wave");
         const percent = circle.dataset.percent;
@@ -143,7 +140,7 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   window.addEventListener("scroll", animateSkills);
-  animateSkills(); // Run on load too
+  animateSkills();
 });
 
 // ────── PORTFOLIO CARDS REVEAL ──────
@@ -170,9 +167,26 @@ window.addEventListener("DOMContentLoaded", () => {
     projObs.observe(p);
   });
 })();
-// inside your scroll handler, after detecting #skills visible
-bars.forEach((bar, i) => {
-  const pct = bar.dataset.percent + '%';
-  bar.style.setProperty('--bar-width', pct);
-  setTimeout(() => bar.classList.add('animate-bar'), i * 200);
+
+// ────── ABOUT ME TABS LOGIC ──────
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".info-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      // remove active + hide all
+      document
+        .querySelectorAll(".info-btn")
+        .forEach((b) => b.classList.remove("active"));
+      document
+        .querySelectorAll(".info-detail")
+        .forEach((detail) => detail.classList.remove("show"));
+
+      // show clicked
+      const targetId = btn.dataset.target;
+      if (targetId) {
+        btn.classList.add("active");
+        const detailEl = document.getElementById(targetId);
+        if (detailEl) detailEl.classList.add("show");
+      }
+    });
+  });
 });
