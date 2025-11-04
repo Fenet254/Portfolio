@@ -1,11 +1,11 @@
 /* ---------- Layout backbone (unchanged) ---------- */
 
 .services-section{
-  position:relative;
+  
   background-color: rgba(0 0 0/.6);
   backdrop-filter:blur(4px);
   border-radius:2rem;
-  margin-block:4rem;
+  margin-block:6rem;
   overflow:hidden;
   box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 0 60px rgba(59, 130, 246, 0.2);
 }
