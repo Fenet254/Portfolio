@@ -6,15 +6,15 @@ body {
     color: #fff;
   }
 
-.containr{
+.about-section{
   padding-top: 120px;
- margin-left:50px;
-  margin-right: 50px;
+  margin-left:70px;
+  margin-right: 90px;
   padding-bottom: 350px;
   background-color: rgba(0 0 0/.6); /* dark blue-gray like other sections */
   border-radius: 30px;
-    box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 0 60px rgba(59, 130, 246, 0.2);
-     box-sizing: border-box;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 0 60px rgba(59, 130, 246, 0.2);
+  box-sizing: border-box;
   position: relative;
   z-index: 1;
 }

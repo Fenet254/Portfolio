@@ -6,8 +6,8 @@
   padding-bottom: 200px;
   background-color: rgba(0 0 0/.6); /* dark blue-gray like other sections */
   border-radius: 30px;
-  margin-left:60px;
-  margin-right: 60px;
+  margin-left:30px;
+  margin-right: 0px;
   box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 0 60px rgba(59, 130, 246, 0.2);
 }
 
