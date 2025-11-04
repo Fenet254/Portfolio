@@ -1,12 +1,14 @@
 /* ---------- Layout backbone (unchanged) ---------- */
 
 .services-section{
-  margin-bottom: 600px;
+  margin-left:30px;
+  margin-right: 30px;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
   padding-bottom: 250px;
   background-color: rgba(0 0 0/.6);
   backdrop-filter:blur(4px);
   border-radius:2rem;
-  margin-block:6rem;
   overflow:hidden;
   box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 0 60px rgba(59, 130, 246, 0.2);
 }
