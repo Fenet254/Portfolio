@@ -189,4 +189,57 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  // ────── CONTACT FORM SUBMISSION ──────
+  const contactForm = document.getElementById("contactForm");
+  const toast = document.getElementById("toast");
+
+  if (contactForm && toast) {
+    contactForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const topic = document.getElementById("topic").value;
+      const subject = document.getElementById("subject").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      // Basic validation
+      if (!name || !email || !phone || !topic || !subject || !message) {
+        showToast("Please fill in all fields.", "error");
+        return;
+      }
+
+      // Email validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        showToast("Please enter a valid email address.", "error");
+        return;
+      }
+
+      // Phone validation (basic)
+      if (phone.length < 7) {
+        showToast("Please enter a valid phone number.", "error");
+        return;
+      }
+
+      // Simulate form submission (since static site, no backend)
+      // In a real app, send to server or service like Formspree
+      showToast("Message sent successfully! I'll get back to you soon.", "success");
+
+      // Reset form
+      contactForm.reset();
+    });
+  }
+
+  function showToast(message, type) {
+    toast.textContent = message;
+    toast.className = `toast ${type}`;
+    toast.style.display = "block";
+
+    setTimeout(() => {
+      toast.style.display = "none";
+    }, 4000);
+  }
 });

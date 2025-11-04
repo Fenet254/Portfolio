@@ -7,7 +7,7 @@
     background:url("../images/Screenshot\ 2025-07-10\ 141806.png") center/cover no-repeat fixed;
     /* optional dark tint for readability */
     background-blend-mode:overlay;
-    background-color:rgba(0,0,0,.55);
+    background-color:rgba(0,0,0,.25);
     z-index:-1;              /* sits behind every section */
   }
   
