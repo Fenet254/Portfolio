@@ -1,9 +1,9 @@
 /* ───── CONTACT SECTION ───── */
 #contact{
-  padding-top: 120px;
+  padding-top: 100px;
   margin-left:70px;
   margin-right: 90px;
-  padding-bottom: 350px;
+  padding-bottom: 200px;
   background-color: rgba(0 0 0/.6); /* dark blue-gray like other sections */
   border-radius: 30px;
   box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 0 60px rgba(59, 130, 246, 0.2);
