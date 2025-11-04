@@ -83,17 +83,23 @@
 
 .view-github-btn {
   display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
+  width: 120px;
+  text-align: center;
+  background: #0af;
+  color: #060505;
+  padding: 1rem 0;
+  border-radius: 20px;
+  font-weight: 600;
   text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  transition: transform .3s, box-shadow .3s, background .3s;
 }
 
 .view-github-btn:hover {
-  background-color: #0056b3;
+  transform: scale(1.05) translateY(-3px);
+  background: #5a8ca2;
+  box-shadow: 0 0 14px rgba(0, 153, 255, 0.4);
+  color: #ddd;
 }
 
 .project-card.top {
