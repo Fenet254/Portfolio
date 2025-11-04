@@ -1,12 +1,16 @@
 /* ───── CONTACT SECTION ───── */
 #contact{
-  padding: 60px 20px;
+  padding-top: 120px;
+  margin-left:70px;
+  margin-right: 90px;
+  padding-bottom: 350px;
   background-color: rgba(0 0 0/.6); /* dark blue-gray like other sections */
   border-radius: 30px;
-  margin-top: 400px;
-  margin-left:10px;
-  margin-right: 10px;
   box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 0 60px rgba(59, 130, 246, 0.2);
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+
 }
   
   

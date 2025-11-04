@@ -12,7 +12,9 @@
   }
   
   .navbar{
-    position:fixed;top:25px;right:20px;
+    position:fixed;
+    top:10px;
+    right:10px;
   }
   .nav-menu{
     display:flex;
@@ -165,14 +167,15 @@
   } 
 
   .navbar{
-      position:fixed;                 /* sticks to top */
-      top:0;left:0;width:100%;
+      position:fixed;
+      top:25px;
+      right:20px;
       display:flex;
-      justify-content:space-between;
+      justify-content:flex-end;
       align-items:center;
-      padding:10px 25px;              
-      background:#000;               
-      box-shadow:0 4px 12px rgba(0,0,0,.25); 
+      padding:10px 25px;
+      background:transparent;
+      box-shadow:0 4px 12px rgba(0,0,0,.25);
       z-index:100;
     }
     .logo img{
@@ -195,7 +198,7 @@
   .hero-photo{
     width:100%;
     height:100%;
-    object-fit:cover;
+    object-fit:contain;
     border-radius:50%;
     box-shadow:0 0 26px rgba(0,170,255,.45);
     animation:bounce 4s ease-in-out infinite;
