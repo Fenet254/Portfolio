@@ -28,9 +28,8 @@ body {
   text-align: center;
   font-size: 3rem;         /* Large size */
   font-weight: bold;
+  padding-top: 100px;
   
-
-  text-transform: uppercase;
   letter-spacing: 2px;
 }
 .bar:hover::before {

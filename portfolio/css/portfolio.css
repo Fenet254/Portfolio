@@ -13,6 +13,22 @@
   z-index: 1;
 }
 
+.project-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  text-align: center;
+  z-index: 2;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
 .section-titl{
    font-size: 3rem;         /* Large size */
   font-weight: 700;
@@ -45,16 +61,24 @@
   overflow: hidden;
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  aspect-ratio: 1;
-  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card img {
-  
-  height: 100%;
-  object-fit: contain;
-  
+  flex: 1;
+  object-fit: cover;
   transition: transform 0.3s ease;
+}
+
+.project-name {
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  z-index: 1;
+  position: relative;
 }
 
 /* Hover Effects */
@@ -82,12 +106,13 @@
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  transform: translateY(100%);
+  transform: translateY(-100%);
   opacity: 0;
   transition: all 0.4s ease;
+  z-index: 3;
 }
 
 .overlay h3 {
@@ -100,11 +125,6 @@
 }
 
 .view-github-btn {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
   display: inline-block;
   width: 140px;
   text-align: center;
@@ -115,6 +135,7 @@
   font-weight: 600;
   text-decoration: none;
   transition: transform .3s, box-shadow .3s, background .3s;
+  margin: 0.5rem auto;
 }
 
 .view-github-btn:hover {

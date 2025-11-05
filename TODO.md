@@ -13,5 +13,6 @@
 - [x] Double the margins (60px) and spacing (12rem top, 24rem bottom) for even more distance
 - [x] Increase margins to 80px and spacing to 24rem top, 48rem bottom for maximum distance
 - [x] Test locally: Open index.html in browser to verify fixes and functionality
+- [x] Update project descriptions, titles, and GitHub links for all six projects in portfolio section
 - [ ] Polish: Review for accessibility, responsiveness, and any broken links
 - [ ] Prepare for deployment: Ensure ready for GitHub Pages or similar
