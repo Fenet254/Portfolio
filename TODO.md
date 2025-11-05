@@ -1,18 +1,6 @@
-# Portfolio Modifications Before Deployment
-
-## Tasks to Complete
-- [x] Fix typos and inconsistencies in portfolio/html/index.html (e.g., IDs like "contat" to "contact", "abouty" to "about", duplicate classes)
-- [x] Add contact form submission logic to portfolio/script.js (validation, prevent default, show toast messages)
-- [x] Update all section containers to consistent styling (padding-top: 120px; margin-left:70px; margin-right: 90px; padding-bottom: 350px; background-color: rgba(0 0 0/.6); border-radius: 30px; box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 0 60px rgba(59, 130, 246, 0.2); box-sizing: border-box; position: relative; z-index: 1;)
-- [x] Equalize project cards and fit images to containers in portfolio/css/portfolio.css
-- [x] Increase spacing between contact, service, and portfolio section containers
-- [x] Change about photo from circle to rectangle with border radius
-- [x] Increase about photo width and change shadow to black
-- [x] Equalize all section containers with 30px margins and 6rem spacing between sections
-- [x] Increase bottom spacing between each section container to 12rem for longer distance
-- [x] Double the margins (60px) and spacing (12rem top, 24rem bottom) for even more distance
-- [x] Increase margins to 80px and spacing to 24rem top, 48rem bottom for maximum distance
-- [x] Test locally: Open index.html in browser to verify fixes and functionality
-- [x] Update project descriptions, titles, and GitHub links for all six projects in portfolio section
-- [ ] Polish: Review for accessibility, responsiveness, and any broken links
-- [ ] Prepare for deployment: Ensure ready for GitHub Pages or similar
+- [x] Wrap img and project-name in .project-content div for each project card in index.html
+- [x] Update CSS to scale only .project-content on hover, exclude button
+- [x] Remove duplicate .project-card:hover in portfolio.css
+- [ ] Test the hover effect to ensure button is not scaled
+- [x] Change professional skills circles to horizontal row layout parallel to technical skills
+- [x] Update mobile responsiveness for professional skills row

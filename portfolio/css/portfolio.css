@@ -13,29 +13,16 @@
   z-index: 1;
 }
 
-.project-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 1.8rem;
-  font-weight: bolder;
-  text-align: center;
-  z-index: 2;
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
-  background: rgba(0, 0, 0, 0.7);
-  padding: 0.5rem;
-  border-radius: 8px;
-}
+
 
 .section-titl{
    font-size: 3rem;         /* Large size */
   font-weight: 700;
   color:#00aaff;
  text-align:center;
-  padding-top: 100px;
-  padding-bottom: 200px;
+  padding-top: 120px;
+  padding-bottom: 150px;
+  margin-top: 180px;
 }
 
 /* Grid */
@@ -46,15 +33,7 @@
   max-width: 1200px;
   margin: 0 auto;
 }
-.sectin-title{
-   font-size:3.5rem;
-  font-weight:700;
-  text-align:center;
-  
-  padding-top:100px;
-  padding-bottom:150px;
- 
-}
+
 /* Card */
 .project-card {
   position: relative;
@@ -69,6 +48,7 @@
   flex: 1;
   object-fit: cover;
   transition: transform 0.3s ease;
+  margin-bottom: 20px;
 }
 
 .project-name {
@@ -79,16 +59,17 @@
   color: white;
   z-index: 1;
   position: relative;
+  margin-bottom: 20px;
 }
 
 /* Hover Effects */
-.project-card:hover img {
+.project-content:hover img {
   transform: scale(1.1); /* 🔸 grow image */
   box-shadow: 0 0 25px rgba(9, 78, 152, 0.9); /* 🔸 bolder glow */
   z-index: 1;
 }
 
-.project-card:hover .overlay {
+.project-content:hover .overlay {
   transform: translateY(0);
   opacity: 1;
 }
@@ -136,6 +117,7 @@
   text-decoration: none;
   transition: transform .3s, box-shadow .3s, background .3s;
   margin: 0.5rem auto;
+  margin-bottom: 20px;
 }
 
 .view-github-btn:hover {
@@ -177,13 +159,13 @@
     transform: translateY(0);
   }
 }
-.project-card {
+.project-content {
   position: relative;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-card:hover {
+.project-content:hover {
   transform: scale(1.05);
   box-shadow: 0 0 25px rgba(0, 123, 255, 0.6);
 }
@@ -211,7 +193,7 @@
   pointer-events: none;
 }
 
-.project-card:hover .project-overlay {
+.project-content:hover .project-overlay {
   bottom: 0;
 }
 
@@ -228,6 +210,6 @@
   transition: opacity 0.4s ease 0.3s;
 }
 
-.project-card:hover .project-desc {
+.project-content:hover .project-desc {
   opacity: 1;
 }
