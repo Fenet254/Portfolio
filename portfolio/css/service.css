@@ -1,10 +1,10 @@
 /* ---------- Layout backbone (unchanged) ---------- */
 
 .services-section{
-  margin-left:30px;
-  margin-right: 30px;
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+  margin-left:80px;
+  margin-right: 80px;
+  margin-top: 24rem;
+  margin-bottom: 48rem;
   padding-bottom: 250px;
   background-color: rgba(0 0 0/.6);
   backdrop-filter:blur(4px);
@@ -34,7 +34,7 @@
   font-size:2.5rem;
   font-weight:700;
   text-align:center;
-  margin-top: 10px;
+  margin-top: 40px;
   margin-bottom:20px
 }
 .section-tagline{text-align:center;font-size:1.05rem;opacity:.75;margin-bottom:3rem}
