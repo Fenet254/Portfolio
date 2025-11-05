@@ -13,7 +13,7 @@ body {
   margin-top: 24rem;
   margin-bottom: 48rem;
   padding-top: 100px;
-  padding-bottom: 200px;
+  padding-bottom: 150px;
   background-color: rgba(0 0 0/.6); /* dark blue-gray like other sections */
   border-radius: 30px;
   margin-left:80px;
@@ -21,12 +21,15 @@ body {
   box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 0 60px rgba(59, 130, 246, 0.2);
 }
 .section-title {
+ color:#00aaff;
+ text-align:center;
+ margin-bottom: 180px;
+   margin-top: 100px;
   text-align: center;
   font-size: 3rem;         /* Large size */
   font-weight: bold;
-  color: white;
-  margin-bottom: 50px;
-  margin-top: 40px;
+  
+
   text-transform: uppercase;
   letter-spacing: 2px;
 }

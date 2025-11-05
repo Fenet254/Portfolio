@@ -3,11 +3,13 @@ body {
   scroll-behavior: smooth;
 }
 #contact{
-  padding-top: 100px;
+  padding-top: 00px;
   margin-left:80px;
   margin-right: 80px;
   margin-top: 24rem;
-  margin-bottom: 24rem;
+  margin-bottom: 20rem;
+  margin-left: 100px;
+  margin-left: 100px;
   padding-bottom: 200px;
   background-color: rgba(0 0 0/.6); /* dark blue-gray like other sections */
   border-radius: 30px;
@@ -20,9 +22,7 @@ body {
   
   
   #contact.visible{opacity:1;transform:translateY(0)}
-  .section-title{
-    font-size:2.2rem;color:#00aaff;text-align:center;margin-bottom:40px;
-  }
+  
   
   #contactForm{max-width:700px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
   
