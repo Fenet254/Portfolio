@@ -3,15 +3,15 @@ body {
   scroll-behavior: smooth;
 }
 #contact{
-  padding-top: 00px;
+  padding-top: 0px;
   margin-left:80px;
   margin-right: 80px;
-  margin-top: 24rem;
+  margin-top: 10px;
   margin-bottom: 20rem;
-  margin-left: 100px;
-  margin-left: 100px;
+  margin-left: 90px;
+  margin-left: 90px;
   padding-bottom: 200px;
-  background-color: rgba(0 0 0/.6); /* dark blue-gray like other sections */
+  background-color: rgba(0 0 0/.6); 
   border-radius: 30px;
   box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 0 60px rgba(59, 130, 246, 0.2);
   box-sizing: border-box;

@@ -5,21 +5,20 @@
   margin-top: 10rem;
   margin-bottom: 45rem;
   padding-bottom: 100px;
-  background-color: rgba(0 0 0/.6); /* dark blue-gray like other sections */
+  background-color: rgba(0 0 0/0.6); /* dark blue-gray like other sections */
   border-radius: 30px;
-  box-shadow: 0 0 20px rgba(127, 175, 253, 0.4), 0 0 60px rgba(59, 130, 246, 0.2);
+  box-shadow: 0 0 20px rgba(127, 175, 253, 0.4),
+    0 0 60px rgba(59, 130, 246, 0.2);
   box-sizing: border-box;
   position: relative;
   z-index: 1;
 }
 
-
-
-.section-titl{
-   font-size: 3rem;         /* Large size */
+.section-titl {
+  font-size: 3rem; /* Large size */
   font-weight: 700;
-  color:#00aaff;
- text-align:center;
+  color: #00aaff;
+  text-align: center;
   padding-top: 120px;
   padding-bottom: 150px;
   margin-top: 180px;
@@ -32,6 +31,13 @@
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+/* Make all project cards equal height */
+.project-card {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Card */
@@ -115,7 +121,7 @@
   border-radius: 20px;
   font-weight: 600;
   text-decoration: none;
-  transition: transform .3s, box-shadow .3s, background .3s;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
   margin: 0.5rem auto;
   margin-bottom: 20px;
 }

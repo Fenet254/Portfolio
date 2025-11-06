@@ -1,15 +1,18 @@
 /* ---------- Layout backbone (unchanged) ---------- */
 
-.services-section{
-  margin-left:80px;
+.services-section {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 80px;
   margin-right: 80px;
-  margin-top: 24rem;
+margin-top: 30px;
   margin-bottom: 38rem;
   padding-bottom: 250px;
-  background-color: rgba(0 0 0/.6);
-  backdrop-filter:blur(4px);
-  border-radius:2rem;
-  overflow:hidden;
+  background-color: rgba(0 0 0/0.6);
+  backdrop-filter: blur(4px);
+  border-radius: 2rem;
+  overflow: hidden;
   box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 0 60px rgba(59, 130, 246, 0.2);
 }
 .service-card .icon i {
@@ -17,61 +20,80 @@
 }
 
 .service-card:hover .icon i {
-  color: #00aaff; /* same neon blue as your aura */
-  text-shadow: 0 0 12px rgba(0, 170, 255, 0.8),
-               0 0 24px rgba(0, 170, 255, 0.6),
-               0 0 36px rgba(0, 170, 255, 0.4);
+  color: #00aaff; 
+  text-shadow: 0 0 12px rgba(0, 170, 255, 0.8), 0 0 24px rgba(0, 170, 255, 0.6),
+    0 0 36px rgba(0, 170, 255, 0.4);
 }
-.services-section::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  border-radius:inherit;
-  box-shadow:inset 0 0 24px rgba(255 255 255/.05);
-  pointer-events:none;}
+.services-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: inset 0 0 24px rgba(255 255 255/0.05);
+  pointer-events: none;
+}
 
+.section-tagline {
+  text-align: center;
+  font-size: 1.8rem;
+  opacity: 0.75;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
 
-.section-tagline{
-  text-align:center;
-  font-size:1.05rem;
-  opacity:.75;
-   margin-top:6rem;
-
-  margin-bottom:5rem;}
-
-.services-grid{
-  display:grid;
-  gap:2rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));}
+.services-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  padding-left: 30px;
+  padding-right: 30px;
+}
 
 /* ---------- Card (initial state) ---------- */
-.service-card{
-  position:relative;
-  background:rgba(255 255 255/.04);
-  border:1px solid rgba(255 255 255/.07);
-  border-radius:1.5rem;
-  padding:2.5rem 1.75rem;
-  text-align:center;
+.service-card {
+  position: relative;
+  background: rgba(255 255 255/0.04);
+  border: 1px solid rgba(255 255 255/0.07);
+  border-radius: 1.5rem;
+  padding: 2.5rem 1.75rem;
+  text-align: center;
 
-  opacity:0;
-  transform:translateY(40px);
-  transition:
-    transform .35s ease,
-    box-shadow .35s ease,
-    opacity   .35s ease;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, opacity 0.35s ease;
 }
 
-.service-card .icon{font-size:2.75rem;margin-bottom:1rem;color:var(--accent,#3f8bfd);}
-.service-card h3{font-size:1.35rem;margin-bottom:.75rem}
-.service-card p{line-height:1.55;font-size:.95rem}
+.service-card .icon {
+  font-size: 2.75rem;
+  margin-bottom: 1rem;
+  color: var(--accent, #3f8bfd);
+}
+.service-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.75rem;
+}
+.service-card p {
+  line-height: 1.55;
+  font-size: 0.95rem;
+}
 
 /* ---------- Reveal animation ---------- */
-@keyframes cardIn{
-  0%  {opacity:0;transform:translateY(40px)}
-  60% {opacity:1;transform:translateY(-6px)}
-  100%{opacity:1;transform:translateY(0)}
+@keyframes cardIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-.service-card.reveal{
-  animation:cardIn .75s ease forwards;   /* <- “forwards” keeps final frame */
+.service-card.reveal {
+  animation: cardIn 0.75s ease forwards; /* <- “forwards” keeps final frame */
 }
 .service-card::after {
   content: "";
@@ -80,23 +102,21 @@
   border-radius: inherit;
   pointer-events: none;
   background: radial-gradient(
-      circle at 50% 50%,
-      rgba(0, 170, 255, 0.45) 0%,
-      rgba(0, 170, 255, 0) 70%
-    );
+    circle at 50% 50%,
+    rgba(0, 170, 255, 0.45) 0%,
+    rgba(0, 170, 255, 0) 70%
+  );
   opacity: 0;
   filter: blur(8px);
   transition: opacity 0.35s ease;
 }
 /* ---------- Hover interaction ---------- */
 .service-card:hover {
-  transform: translateY(-12px) scale(.15);   /* ← bigger! */
-  box-shadow: 0 38px 70px rgba(0, 170, 255, 0.40);
+  transform: translateY(-12px) scale(0.15); /* ← bigger! */
+  box-shadow: 0 38px 70px rgba(0, 170, 255, 0.4);
   border-color: #00aaff;
-  z-index: 2;                                 /* keeps it above neighbours */
+  z-index: 2; /* keeps it above neighbours */
 }
 .service-card:hover::after {
-  opacity: 1;                          /* neon aura switches on */
+  opacity: 1; /* neon aura switches on */
 }
-
-
