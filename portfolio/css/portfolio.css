@@ -40,6 +40,11 @@
   flex-direction: column;
 }
 
+.project-card img {
+  height: 300px;
+  object-fit: cover;
+}
+
 /* Card */
 .project-card {
   position: relative;
