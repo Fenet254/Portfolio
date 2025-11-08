@@ -1,13 +1,4 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #0f172a;
-  color: #ffffff;
-}
-/* make all skill icons black */
-.bar i {
-  color: black !important;
-}
+
 
 .skills-section {
   margin-top: 24rem;
@@ -47,9 +38,11 @@ body {
 }
 
 .skills-wrapper {
-  display: grid;
- 
- 
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 /* ===== TECHNICAL SKILLS ===== */
@@ -392,8 +385,7 @@ body {
 /* ===== MOBILE RESPONSIVENESS ===== */
 @media (max-width: 768px) {
   .skills-wrapper {
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
   }
 
   .circle-grid {
