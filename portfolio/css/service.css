@@ -3,11 +3,9 @@
 .services-section {
   padding-top: 30px;
   padding-left: 20px;
-  padding-right: 20px;
-  margin-left: 80px;
-  margin-right: 80px;
-margin-top: 30px;
-  margin-bottom: 38rem;
+  padding-right: 40px;
+  margin: 30px auto 38rem;
+  max-width: 1200px;
   padding-bottom: 250px;
   background-color: rgba(0 0 0/0.6);
   backdrop-filter: blur(4px);
@@ -37,8 +35,9 @@ margin-top: 30px;
   text-align: center;
   font-size: 1.8rem;
   opacity: 0.75;
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  color: white;
 }
 
 .services-grid {
@@ -71,10 +70,12 @@ margin-top: 30px;
 .service-card h3 {
   font-size: 1.35rem;
   margin-bottom: 0.75rem;
+  color: white;
 }
 .service-card p {
   line-height: 1.55;
   font-size: 0.95rem;
+  color: white;
 }
 
 /* ---------- Reveal animation ---------- */

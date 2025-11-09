@@ -7,11 +7,9 @@ body {
   }
 
 .about-section{
- 
-  margin-left:80px;
-  margin-right: 80px;
-  margin-top: 15rem;
-  margin-bottom: 45rem;
+
+  margin: 15rem auto 45rem;
+  max-width: 1200px;
   padding-bottom: 160px;
   background-color: rgba(0 0 0/.6);
   border-radius: 30px;
