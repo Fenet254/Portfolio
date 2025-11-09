@@ -7,11 +7,9 @@ body {
   }
 
 .about-section{
- 
-  margin-left:80px;
-  margin-right: 80px;
-  margin-top: 15rem;
-  margin-bottom: 45rem;
+
+  margin: 15rem auto 45rem;
+  max-width: 1400px;
   padding-bottom: 160px;
   background-color: rgba(0 0 0/.6);
   border-radius: 30px;
@@ -20,7 +18,15 @@ body {
   position: relative;
   z-index: 1;
 }
-
+section-tit{
+   font-size: 3rem; /* Large size */
+  font-weight: 700;
+  color: #00aaff;
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 140px;
+  margin-top: 180px;
+}
   .about-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;

@@ -69,9 +69,9 @@
         </li>
       </ul>
 
-<a href="#about" class="btn more-btn" id="more-about-me" style="--i:6">More About Me</a>
+<a href="#about-panel" class="btn more-btn" id="more-about-me" style="--i:6">More About Me</a>
 
-      <a href="../files/Fenet_Gizaw_CV.pdf" class="download-btn" download style="--i:7">
+      <a href="../images/CV.png" class="download-btn" download style="--i:7">
         Download CV
       </a>
     </div>
@@ -83,6 +83,7 @@
   </section>
 
   <aside id="about-panel">
+    <button id="close-about" class="close-btn">&times;</button>
     <h2>About Me</h2>
   <p>
     Hi again! I'm Feneta Software Engineering student with a passion for building impactful tech.
@@ -100,7 +101,7 @@
   </p>
   </aside>
 <section class="about-section" id="about">
-  <h2 class="section-titl" >About me</h2>
+  <h2 class="section-title" >About me</h2>
   <div class="about-grid">
    
     <div class="photo-wrap">
@@ -158,97 +159,100 @@ Passionate about advancing AI/ML technologies, integrating them into web and mob
 
 <section id="skills" class="skills-section visible container">
   <h2 class="section-title">Skills</h2>
-  <div class="skills-wrapper">
-    <div class="technical-skills">
-      <h3 class="glow-heading">Technical Skills</h3>
-    
-      <div class="bar html" data-percent="90">
-        <i class="fab fa-html5"></i> HTML <span class="tooltip">90%</span> <span class="percent">0%</span>
-      </div>
-    
-      <div class="bar css" data-percent="85">
-        <i class="fab fa-css3-alt"></i> CSS <span class="tooltip">85%</span> <span class="percent">0%</span>
-      </div>
-    
-      <div class="bar js" data-percent="80">
-        <i class="fab fa-js"></i> JavaScript <span class="tooltip">80%</span> <span class="percent">0%</span>
-      </div>
-    
-      <div class="bar react" data-percent="75">
-        <i class="fab fa-react"></i> React.js <span class="tooltip">75%</span> <span class="percent">0%</span>
-      </div>
-    
-      <div class="bar node" data-percent="70">
-        <i class="fab fa-node-js"></i> Node.js <span class="tooltip">70%</span> <span class="percent">0%</span>
-      </div>
-    
-      <div class="bar mysql" data-percent="65">
-        <i class="fas fa-database"></i> MySQL <span class="tooltip">65%</span> <span class="percent">0%</span>
-      </div>
-    
-      <div class="bar cpp" data-percent="60">
-        <i class="fas fa-code"></i> C++ <span class="tooltip">60%</span> <span class="percent">0%</span>
-      </div>
-    
-      <div class="bar express" data-percent="60">
-        <i class="fas fa-server"></i> Express.js <span class="tooltip">60%</span> <span class="percent">0%</span>
-      </div>
-    
-      <div class="bar python" data-percent="50">
-        <i class="fab fa-python"></i> Python <span class="tooltip">50%</span> <span class="percent">0%</span>
-      </div>
 
-      <div class="bar tensorflow" data-percent="70">
-        <i class="fas fa-brain"></i> TensorFlow <span class="tooltip">70%</span> <span class="percent">0%</span>
-      </div>
+    <div class="skills-intro">
+    <div class="skills-wrapper">
+      <div class="technical-skills">
+        <h3 class="glow-heading">Technical Skills</h3>
 
-      <div class="bar pytorch" data-percent="65">
-        <i class="fas fa-brain"></i> PyTorch <span class="tooltip">65%</span> <span class="percent">0%</span>
-      </div>
-
-      <div class="bar scikit" data-percent="75">
-        <i class="fas fa-chart-line"></i> Scikit-learn <span class="tooltip">75%</span> <span class="percent">0%</span>
-      </div>
-
-      <div class="bar keras" data-percent="60">
-        <i class="fas fa-brain"></i> Keras <span class="tooltip">60%</span> <span class="percent">0%</span>
-      </div>
-
-    
-    <!-- Professional Skills -->
-    <div class="professional-skills">
-      <h3 class="glow-heading">Professional Skills</h3>
-      <div class="circle-grid">
-        <div class="circle top" data-percent="75">
-          <div class="wave"></div>
-          <span>AI/ML<br>Enthusiast<br>75%</span>
+        <div class="bar html" data-percent="90">
+          <i class="fab fa-html5"></i> HTML <span class="tooltip">90%</span> <span class="percent">0%</span>
         </div>
-        <div class="circle top" data-percent="80">
-          <div class="wave"></div>
-          <span>Full-Stack Web Develope<br>80%</span>
+
+        <div class="bar css" data-percent="85">
+          <i class="fab fa-css3-alt"></i> CSS <span class="tooltip">85%</span> <span class="percent">0%</span>
         </div>
-        <div class="circle bottom" data-percent="70">
-          <div class="wave"></div>
-          <span> UI/UX Designer<br>70%</span>
+
+        <div class="bar js" data-percent="80">
+          <i class="fab fa-js"></i> JavaScript <span class="tooltip">80%</span> <span class="percent">0%</span>
         </div>
-        <div class="circle bottom" data-percent="65">
-          <div class="wave"></div>
-          <span> Technical<br>Content Creator<br>65%</span>
+
+        <div class="bar react" data-percent="75">
+          <i class="fab fa-react"></i> React.js <span class="tooltip">75%</span> <span class="percent">0%</span>
+        </div>
+
+        <div class="bar node" data-percent="70">
+          <i class="fab fa-node-js"></i> Node.js <span class="tooltip">70%</span> <span class="percent">0%</span>
+        </div>
+
+        <div class="bar mysql" data-percent="65">
+          <i class="fas fa-database"></i> MySQL <span class="tooltip">65%</span> <span class="percent">0%</span>
+        </div>
+
+        <div class="bar cpp" data-percent="60">
+          <i class="fas fa-code"></i> C++ <span class="tooltip">60%</span> <span class="percent">0%</span>
+        </div>
+
+        <div class="bar express" data-percent="60">
+          <i class="fas fa-server"></i> Express.js <span class="tooltip">60%</span> <span class="percent">0%</span>
+        </div>
+
+        <div class="bar python" data-percent="50">
+          <i class="fab fa-python"></i> Python <span class="tooltip">50%</span> <span class="percent">0%</span>
+        </div>
+
+        <div class="bar tensorflow" data-percent="70">
+          <i class="fas fa-brain"></i> TensorFlow <span class="tooltip">70%</span> <span class="percent">0%</span>
+        </div>
+
+        <div class="bar pytorch" data-percent="65">
+          <i class="fas fa-brain"></i> PyTorch <span class="tooltip">65%</span> <span class="percent">0%</span>
+        </div>
+
+        <div class="bar scikit" data-percent="75">
+          <i class="fas fa-chart-line"></i> Scikit-learn <span class="tooltip">75%</span> <span class="percent">0%</span>
+        </div>
+
+        <div class="bar keras" data-percent="60">
+          <i class="fas fa-brain"></i> Keras <span class="tooltip">60%</span> <span class="percent">0%</span>
         </div>
       </div>
+
+      <div class="professional-skills">
+        <h3 class="glow-heading">Professional Skills</h3>
+        <div class="circle-grid">
+          <div class="circle top" data-percent="75">
+            <div class="wave"></div>
+            <span>AI/ML<br>Enthusiast<br>75%</span>
+          </div>
+          <div class="circle top" data-percent="80">
+            <div class="wave"></div>
+            <span>Full-Stack Web Developer<br>80%</span>
+          </div>
+          <div class="circle bottom" data-percent="70">
+            <div class="wave"></div>
+            <span> UI/UX Designer<br>70%</span>
+          </div>
+          <div class="circle bottom" data-percent="65">
+            <div class="wave"></div>
+            <span> Technical<br>Content Creator<br>65%</span>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
 
 </section>
 <section id="portfolio" class="portfolio-section">
   <h2 class="section-titl">My Portfolio</h2>
   <div class="portfolio-grid">
-    <!-- Project 1 -->
+   
     <div class="project-card top" style="--i:1">
       <div class="project-content">
-        <img src="../images/greangurdians.png" alt="Project 1">
+        <img src="../images/greangurdians.png" alt="Project 1" data-description="An AI-powered system that detects and classifies coffee plants using computer vision and deep learning. It enables real-time plant identification and health monitoring from images or drone footage, helping improve farm management and yield analysis.">
         <div class="project-name">AI Powered Coffee  Desease Detection</div>
       </div>
-      <a href="https://github.com/Fenet254/Job-Application-Tracker" target="_blank" class="view-github-btn">View on GitHub</a>
+      <a href="https://github.com/Ebo1996/green-guardian" target="_blank" class="view-github-btn">View on GitHub</a>
       <div class="overlay">
         <h3>AI Powered Coffee  Desease Detection</h3>
         <p>An AI-powered system that detects and classifies coffee plants using computer vision and deep learning.
@@ -259,7 +263,7 @@ It enables real-time plant identification and health monitoring from images or d
    <!-- Project 2 -->
 <div class="project-card top" style="--i:2">
   <div class="project-content">
-    <img src="../images/image1.png" alt="Portfolio Website">
+    <img src="../images/image1.png" alt="Portfolio Website" data-description="Discover everything women love — all in one place. From fashion and beauty to accessories, skincare, and lifestyle essentials, our store brings together the latest trends and timeless pieces for every occasion. Shop confidently and express your style effortlessly.">
     <div class="project-name">Women's Shop Website</div>
   </div>
   <a href="https://github.com/Fenet254/Women-Shop-E-commerce" target="_blank" class="view-github-btn">View on GitHub</a>
@@ -271,7 +275,7 @@ It enables real-time plant identification and health monitoring from images or d
 
 <div class="project-card top" style="--i:3">
   <div class="project-content">
-    <img src="../images/learning.png" alt="Project 3">
+    <img src="../images/learning.png" alt="Project 3" data-description="Learn anytime, anywhere. Our platform offers interactive courses, hands-on projects, and expert-led lessons to help you master new skills and advance your career in today’s digital world.">
     <div class="project-name">Online Learning Platform</div>
   </div>
   <a href="https://github.com/Fenet254/Online-Learning-Platform" target="_blank" class="view-github-btn">View on GitHub</a>
@@ -283,40 +287,45 @@ It enables real-time plant identification and health monitoring from images or d
    <!-- Project 4 -->
     <div class="project-card bottom" style="--i:4">
       <div class="project-content">
-        <img src="../images/OIP.webp" alt="Project 4">
-        <div class="project-name">Event Management System</div>
+        <img src="../images/sentiment.png" alt="Project 4" data-description="Analyze text to determine sentiment, helping businesses understand customer feedback and opinions.">
+        <div class="project-name">AI Powered Sentiment analysis</div>
       </div>
+
       <a href="https://github.com/Fenet254/Home-Furniture-E-Commerce-Website" target="_blank" class="view-github-btn">View on GitHub</a>
       <div class="overlay">
         <h3>Furniture E-Commerce-Website</h3>
         <p>Create and manage university events with ease.</p>
+
+      <a href="https://github.com/Fenet254/sentiment-analysis-app" target="_blank" class="view-github-btn">View on GitHub</a>
+      <div class="overlay">
+        <h3>AI Powered Sentiment analysis</h3>
+        <p>Analyze text to determine sentiment, helping businesses understand customer feedback and opinions.</p>
+
       </div>
     </div>
 
    <!-- Project 5 -->
 <div class="project-card bottom" style="--i:5">
   <div class="project-content">
-    <img src="../images/greangurdians.png" alt="Project 5">
-    <div class="project-name">AI Powered Coffee Disease Detection</div>
+    <img src="../images/eccomerce.png" alt="Project 5" data-description="Discover curated collections to transform your house into a home. Browse high-quality furniture for every room, with style and delivery made easy.">
+    <div class="project-name">Furniture E-commerce  Website</div>
   </div>
-  <a href="https://github.com/Fenet254/AI-Powered-Coffee-Disease-Detection" target="_blank" class="view-github-btn">View on GitHub</a>
+  <a href="https://github.com/Fenet254/Home-Furniture-E-Commerce-Website" target="_blank" class="view-github-btn">View on GitHub</a>
   <div class="overlay">
-    <h3>AI Powered Coffee Disease Detection</h3>
-    <p>
-      
-    </p>
+    <h3> Furniture E-commerce  Website</h3>
+    <p>Discover curated collections to transform your house into a home. Browse high-quality furniture for every room, with style and delivery made easy.</p>
   </div>
 </div>
 <!-- Project 6 -->
 <div class="project-card bottom" style="--i:6">
   <div class="project-content">
-    <img src="../images/image.png" alt="Project 6">
+    <img src="../images/image.png" alt="Project 6" data-description="Upload chest X-ray images for automated inference. Receive a clear prediction—'Pneumonia' or 'Normal'—with an associated confidence score.">
     <div class="project-name">AI-Powered  Pnemonia Desease Detection</P></div>
   </div>
-  <a href="https://github.com/Fenet254/AI-Powered-Weather-App" target="_blank" class="view-github-btn">View on GitHub</a>
+  <a href="https://github.com/Fenet254/pneumonia_webapp-" target="_blank" class="view-github-btn">View on GitHub</a>
   <div class="overlay">
     <h3>AI-Powered  Pnemonia Desease Detection</h3>
-   <p>This AI-powered weather app provides real-time weather updates and accurate forecasts using advanced predictive AI models, offering users reliable and timely weather information.</p>
+   <p>Upload chest X-ray images  for automated inference. Receive a clear prediction—"Pneumonia" or "Normal"—with an associated confidence score.</p>
   </div>
 </div>
 </section>
@@ -334,17 +343,19 @@ It enables real-time plant identification and health monitoring from images or d
         <strong>Tech Used:</strong><br>
         HTML, CSS, JavaScript, React.js, Tailwind CSS.
       </p>
+      <p>Creating modern, engaging websites that work seamlessly across all devices.</p>
     </article>
 
     <!-- Card 2 -->
     <article class="service-card">
-      <div class="icon"><i class="fas fa-server"></i></div> 
+      <div class="icon"><i class="fas fa-server"></i></div>
       <h3>Backend Web Development</h3>
       <p>
         Developing secure and scalable server-side systems, APIs, and databases to power modern web applications.<br>
         <strong>Tech Used:</strong><br>
         Node.js, Express.js, MySQL, MongoDB.
       </p>
+      <p>Ensuring robust data handling and server performance for reliable applications.</p>
     </article>
 
     <!-- Card 3 -->
@@ -354,7 +365,7 @@ It enables real-time plant identification and health monitoring from images or d
 <p>
   I build intelligent systems that connect data with real-world apps focusing on chatbots, recommendation engines,& predictive models that make software smarter & more adaptive. I turn ideas into scalable, data-driven solns that learn & improve .  <strong>Tech Stack:</strong>Python,TensorFlow,Scikit-learn,penAI API,NLP,Data Processing
 </p>
-
+<p>Integrating AI to automate processes and provide intelligent insights.</p>
     </article>
 
     <!-- Card 4 -->
@@ -366,6 +377,7 @@ It enables real-time plant identification and health monitoring from images or d
         <strong>Tech Used:</strong><br>
         Figma, Adobe XD, Sketch, User Research, Usability Testing.
       </p>
+      <p>Crafting user-centered designs that enhance satisfaction and usability.</p>
     </article>
   </div>
 </section>

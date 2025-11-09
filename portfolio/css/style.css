@@ -1,6 +1,10 @@
 
+  body{
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
   body::before{
-    
+
     content:"";
     position:fixed;          /* stays still while you scroll */
     inset:0;                 /* full‑viewport */
@@ -11,15 +15,15 @@
     z-index:-1;              /* sits behind every section */
   }
   
-  .navbar{
-    position:fixed;
-    top:10px;
-    right:10px;
-  }
+
   .nav-menu{
     display:flex;
     gap:30px;
-    list-style:none
+    list-style:none;
+    background:transparent;
+    padding:10px 25px;
+    box-shadow:0 4px 12px rgba(0,0,0,.25);
+    border-radius:20px;
   }
   .nav-link{
     position:relative;
@@ -176,7 +180,17 @@
       padding:10px 25px;
       background:transparent;
       box-shadow:0 4px 12px rgba(0,0,0,.25);
+      border-radius:20px;
       z-index:100;
+    }
+    .nav-menu{
+      display:flex;
+      gap:30px;
+      list-style:none;
+      background:transparent;
+      padding:10px 25px;
+      box-shadow:0 4px 12px rgba(0,0,0,.25);
+      border-radius:20px;
     }
     .logo img{
       height:40px;       

@@ -1,10 +1,8 @@
 /* Portfolio Section */
 .portfolio-section {
-  margin-left: 80px;
-  margin-right: 80px;
-  margin-top: 10rem;
-  margin-bottom: 45rem;
-  padding-bottom: 100px;
+  margin: 8px auto 45rem;
+  max-width: 1350px;
+  padding-bottom: 90px;
   background-color: rgba(0 0 0/0.6); /* dark blue-gray like other sections */
   border-radius: 30px;
   box-shadow: 0 0 20px rgba(127, 175, 253, 0.4),
