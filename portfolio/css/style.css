@@ -1,6 +1,10 @@
 
+  body{
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
   body::before{
-    
+
     content:"";
     position:fixed;          /* stays still while you scroll */
     inset:0;                 /* full‑viewport */

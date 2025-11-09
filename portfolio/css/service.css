@@ -2,10 +2,12 @@
 
 .services-section {
   padding-top: 30px;
-  padding-left: 20px;
+  padding-left: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
   padding-right: 40px;
   margin: 30px auto 38rem;
-  max-width: 1200px;
+  max-width: 1350px;
   padding-bottom: 250px;
   background-color: rgba(0 0 0/0.6);
   backdrop-filter: blur(4px);
@@ -42,8 +44,8 @@
 
 .services-grid {
   display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 6rem;
+  grid-template-columns: repeat(2, 1fr);
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -52,14 +54,14 @@
 .service-card {
   position: relative;
   background: rgba(255 255 255/0.04);
-  border: 1px solid rgba(255 255 255/0.07);
+  border: 0.5px solid #3b82f6;
   border-radius: 1.5rem;
   padding: 2.5rem 1.75rem;
   text-align: center;
 
   opacity: 0;
   transform: translateY(40px);
-  transition: transform 0.35s ease, box-shadow 0.35s ease, opacity 0.35s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, opacity 0.35s ease, rotate 0.35s ease;
 }
 
 .service-card .icon {
@@ -76,6 +78,7 @@
   line-height: 1.55;
   font-size: 0.95rem;
   color: white;
+  margin-bottom: 1rem;
 }
 
 /* ---------- Reveal animation ---------- */
@@ -113,11 +116,27 @@
 }
 /* ---------- Hover interaction ---------- */
 .service-card:hover {
-  transform: translateY(-12px) scale(0.15); /* ← bigger! */
+  transform: translateY(-12px) scale(0.15) rotate(2deg); /* ← bigger! */
   box-shadow: 0 38px 70px rgba(0, 170, 255, 0.4);
   border-color: #00aaff;
   z-index: 2; /* keeps it above neighbours */
 }
 .service-card:hover::after {
   opacity: 1; /* neon aura switches on */
+}
+
+/* ---------- Mobile responsiveness ---------- */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .service-card {
+    border: 1px solid #3b82f6;
+  }
+
+  .service-card:hover {
+    transform: translateY(-8px) scale(0.1) rotate(1deg);
+  }
 }
