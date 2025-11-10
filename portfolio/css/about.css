@@ -8,9 +8,12 @@ body {
 
 .about-section{
 
-  margin: 15rem auto 45rem;
-  max-width: 1400px;
-  padding-bottom: 160px;
+  margin-left: 50px;
+  margin-bottom: 800px;
+  padding-left: 50px;
+  padding-right: 50px;
+  max-width: 1350px;
+  padding-bottom: 180px;
   background-color: rgba(0 0 0/.6);
   border-radius: 30px;
   box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 0 60px rgba(59, 130, 246, 0.2);
@@ -41,8 +44,8 @@ section-tit{
   }
 
   .about-photo {
-    width: 500px;
-    height: 600px;
+    width: 450px;
+    height: 500px;
     border-radius: 50%;
     object-fit: cover;
     animation: bounce 4s infinite;

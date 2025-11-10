@@ -1,11 +1,10 @@
 
-
 .skills-section {
   margin: 24rem auto 48rem;
-  max-width: 1400px;
+  max-width: 1300px;
   padding-top: 100px;
-  padding-bottom: 150px;
-  background-color: rgba(0 0 0/0.6); /* dark blue-gray like other sections */
+  padding-bottom: 100px;
+  background-color: rgba(0 0 0/0.6); 
   border-radius: 30px;
   box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 0 60px rgba(59, 130, 246, 0.2);
 }
@@ -13,23 +12,19 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 40px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 .section-title {
   color: #00aaff;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 
   text-align: center;
   font-size: 4rem; /* Large size */
   font-weight: bold;
 
-  padding-top: 20px;
-
   padding-top: 30px;
-
-
   letter-spacing: 2px;
 }
 .bar:hover::before {
@@ -52,7 +47,7 @@
 .professional-skills {
   flex: 1 1 300px;
   max-width: 500px;
-  padding-left: 40px;
+  padding-left: 70px;
 }
 
 .technical-skills .bar {

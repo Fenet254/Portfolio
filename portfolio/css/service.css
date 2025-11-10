@@ -1,14 +1,14 @@
 /* ---------- Layout backbone (unchanged) ---------- */
 
 .services-section {
-  padding-top: 30px;
-  padding-left: 40px;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-top: 50px;
+  padding-left: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
   padding-right: 40px;
   margin: 30px auto 38rem;
   max-width: 1350px;
-  padding-bottom: 250px;
+  padding-bottom: 140px;
   background-color: rgba(0 0 0/0.6);
   backdrop-filter: blur(4px);
   border-radius: 2rem;
