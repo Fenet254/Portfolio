@@ -1,6 +1,0 @@
-- [x] Wrap img and project-name in .project-content div for each project card in index.html
-- [x] Update CSS to scale only .project-content on hover, exclude button
-- [x] Remove duplicate .project-card:hover in portfolio.css
-- [ ] Test the hover effect to ensure button is not scaled
-- [x] Change professional skills circles to horizontal row layout parallel to technical skills
-- [x] Update mobile responsiveness for professional skills row
