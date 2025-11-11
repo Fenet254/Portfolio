@@ -6,7 +6,7 @@ body::before {
   content: "";
   position: fixed; /* stays still while you scroll */
   inset: 0; /* full‑viewport */
-  background: url("../images/Screenshot\ 2025-07-10\ 141806.png") center/cover
+  background: url("./images/Screenshot\ 2025-07-10\ 141806.png") center/cover
     no-repeat fixed;
   /* optional dark tint for readability */
   background-blend-mode: overlay;
