@@ -79,12 +79,17 @@ document.addEventListener("DOMContentLoaded", () => {
   if (moreBtn && aboutPanel && closeBtn) {
     moreBtn.addEventListener("click", (e) => {
       e.preventDefault();
-      aboutPanel.style.display = "block";
-      aboutPanel.style.animation = "slideIn 0.4s ease forwards";
+      aboutPanel.style.display = "flex";
     });
-    closeBtn.addEventListener("click", () => {
-      aboutPanel.style.animation = "slideOut 0.3s ease forwards";
-      setTimeout(() => (aboutPanel.style.display = "none"), 300);
+    closeBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      aboutPanel.style.display = "none";
+    });
+    // Close modal when clicking outside
+    aboutPanel.addEventListener("click", (e) => {
+      if (e.target === aboutPanel) {
+        aboutPanel.style.display = "none";
+      }
     });
   }
 });
@@ -226,7 +231,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Simulate form submission (since static site, no backend)
       // In a real app, send to server or service like Formspree
-      showToast("Message sent successfully! I'll get back to you soon.", "success");
+      showToast(
+        "Message sent successfully! I'll get back to you soon.",
+        "success"
+      );
 
       // Reset form
       contactForm.reset();
