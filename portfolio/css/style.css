@@ -272,7 +272,7 @@ body::before {
   width: 350px;
   height: 100vh;
   background: #111;
-  color: #040202;
+  color: #fff;
   padding: 2rem;
   transition: right 0.5s ease;
   box-shadow: -6px 0 20px rgba(0, 0, 0, 0.5);
@@ -282,7 +282,7 @@ body::before {
   right: 0;
 }
 #about-panel h2 {
-  color: rgb(0, 5, 8);
+  color: #fff;
   margin-bottom: 0.8rem;
 }
 #close-about {
@@ -290,7 +290,7 @@ body::before {
   top: 10px;
   left: 10px;
   font-size: 1.8rem;
-  color: #040202;
+  color: #fff;
   background: none;
   border: none;
   cursor: pointer;

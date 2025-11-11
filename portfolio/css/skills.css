@@ -1,9 +1,13 @@
 
 .skills-section {
-  margin: 24rem auto 48rem;
+  margin-top: 500px;
+  margin-left: 70px;
+  margin-right: 70px;
+  padding-left: 50px;
+  padding-right: 50px;
   max-width: 1300px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: rgba(0 0 0/0.6); 
   border-radius: 30px;
   box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 0 60px rgba(59, 130, 246, 0.2);
@@ -12,7 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 10px;
+ 
   flex-wrap: wrap;
 }
 .section-title {
