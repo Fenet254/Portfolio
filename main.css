@@ -401,6 +401,7 @@ body::before {
    ABOUT SECTION
    ============================================ */
 .about-section {
+  margin-top: 380px; /* reduce top height */
   margin-left: 65px;
   margin-right: 65px;
   margin-bottom: 50px;
@@ -793,9 +794,6 @@ margin-top: 380px; /* reduce top height */
   }
 }
 
-/* ============================================
-   PORTFOLIO SECTION
-   ============================================ */
 .portfolio-section {
   margin-left: 80px;
   margin-right: 80px;
