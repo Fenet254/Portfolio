@@ -89,12 +89,14 @@
   top: 0;
   height: 100%;
   width: var(--bar-width, 0%);
-  background: linear-gradient(to right, #3b82f6 50%, #1e3a8a 50%);
+  /* Force all filled parts to blue */
+  background: linear-gradient(to right, #0af 0%, #3b82f6 50%, #1e3a8a 100%);
   border-radius: 20px;
   transform-origin: left;
   transition: width 1s ease;
   z-index: -1;
 }
+
 
 /* Bar widths */
 .bar.html::before   { width: 90%; }
@@ -107,10 +109,11 @@
 .bar.express::before { width: 60%; }
 .bar.python::before { width: 50%; }
 .bar.tensorflow::before { width: 70%; }
-.bar.pytorch::before    { width: 65%; }
-.bar.scikit::before     { width: 75%; }
-.bar.keras::before      { width: 60%; }
+.bar.typescript::before { width: 65%; }
+.bar.nestjs::before     { width: 75%; }
+.bar.docker::before     { width: 60%; }
 .bar.opencv::before     { width: 55%; }
+
 
 /* Animation delays */
 .bar.html      { animation-delay: 0.1s; }
@@ -123,10 +126,11 @@
 .bar.express   { animation-delay: 1.5s; }
 .bar.python    { animation-delay: 1.55s; }
 .bar.tensorflow { animation-delay: 1.7s; }
-.bar.pytorch   { animation-delay: 1.9s; }
-.bar.scikit    { animation-delay: 2.1s; }
-.bar.keras     { animation-delay: 2.3s; }
-.bar.opencv    { animation-delay: 2.5s; }
+.bar.typescript { animation-delay: 1.9s; }
+.bar.nestjs     { animation-delay: 2.1s; }
+.bar.docker     { animation-delay: 2.3s; }
+.bar.opencv     { animation-delay: 2.5s; }
+
 
 /* Hover effects */
 .technical-skills .bar:hover {
