@@ -19,14 +19,17 @@
 }
 
 .section-titl {
+  /* keep legacy class */
+
   font-size: 3rem; 
   font-weight: 700;
   color: #00aaff;
   text-align: center;
-  padding-top: 120px;
-  padding-bottom: 120px;
-  margin-top: 180px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  margin-top: 0px;
 }
+
 
 /* Grid */
 .portfolio-grid {

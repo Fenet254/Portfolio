@@ -1,52 +1,51 @@
-
+/* ============================================
+   SKILLS SECTION
+   ============================================ */
 .skills-section {
-  margin-top: 500px;
+  margin-top: 10px;
   margin-left: 70px;
   margin-right: 70px;
   padding-left: 50px;
   padding-right: 50px;
   max-width: 1300px;
-  padding-top: 50px;
+  padding-top: 20px;
   padding-bottom: 50px;
-  background-color: rgba(0 0 0/0.6); 
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 30px;
   box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 0 60px rgba(59, 130, 246, 0.2);
 }
+
+.section-title {
+  color: #00aaff;
+  padding-top: 0px;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  padding-top: 10px;   /* reduced to decrease top space */
+  margin-top: 0;       /* removed extra top space */
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
 .skills-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
- 
   flex-wrap: wrap;
-}
-.section-title {
-  color: #00aaff;
-  text-align: center;
-  margin-bottom: 70px;
-
-  text-align: center;
-  font-size: 4rem; /* Large size */
-  font-weight: bold;
-
-  padding-top: 30px;
-  letter-spacing: 2px;
-}
-.bar:hover::before {
-  filter: brightness(1.2);
-  box-shadow: 0 0 10px #3b82f6;
 }
 
 .glow-heading {
   text-align: center;
+  margin-top: 10px;
   font-size: 1.8rem;
   color: #3b82f6;
   text-shadow: 0 0 10px #3b82f6, 0 0 20px #3b82f6;
-  margin-bottom: 30px; /* increase space under titles */
-  margin-top: 30px; /* increase space above titles */
+  margin-bottom: 20px;
 }
 
-
-/* ===== TECHNICAL SKILLS ===== */
+/* ============================================
+   TECHNICAL SKILLS
+   ============================================ */
 .technical-skills,
 .professional-skills {
   flex: 1 1 300px;
@@ -60,13 +59,95 @@
   border-radius: 20px;
   margin: 16px 0;
   padding: 8px 16px;
-  color: #040000;
   position: relative;
   overflow: hidden;
   animation: slideFromTop 0.8s ease forwards;
   opacity: 0;
 }
 
+.bar i {
+  margin-right: 8px;
+  color: #3b82f6;
+}
+
+.bar .percent {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  z-index: 3;
+  color: white;
+}
+
+.bar::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: var(--bar-width, 0%);
+  background: linear-gradient(to right, #3b82f6 50%, #1e3a8a 50%);
+  border-radius: 20px;
+  transform-origin: left;
+  transition: width 1s ease;
+  z-index: -1;
+}
+
+/* Bar widths */
+.bar.html::before   { width: 90%; }
+.bar.css::before    { width: 85%; }
+.bar.js::before     { width: 80%; }
+.bar.react::before  { width: 75%; }
+.bar.node::before   { width: 70%; }
+.bar.mysql::before  { width: 65%; }
+.bar.cpp::before    { width: 60%; }
+.bar.express::before { width: 60%; }
+.bar.python::before { width: 50%; }
+.bar.tensorflow::before { width: 70%; }
+.bar.pytorch::before    { width: 65%; }
+.bar.scikit::before     { width: 75%; }
+.bar.keras::before      { width: 60%; }
+.bar.opencv::before     { width: 55%; }
+
+/* Animation delays */
+.bar.html      { animation-delay: 0.1s; }
+.bar.css       { animation-delay: 0.3s; }
+.bar.js        { animation-delay: 0.5s; }
+.bar.react     { animation-delay: 0.7s; }
+.bar.node      { animation-delay: 0.9s; }
+.bar.mysql     { animation-delay: 1.1s; }
+.bar.cpp       { animation-delay: 1.3s; }
+.bar.express   { animation-delay: 1.5s; }
+.bar.python    { animation-delay: 1.55s; }
+.bar.tensorflow { animation-delay: 1.7s; }
+.bar.pytorch   { animation-delay: 1.9s; }
+.bar.scikit    { animation-delay: 2.1s; }
+.bar.keras     { animation-delay: 2.3s; }
+.bar.opencv    { animation-delay: 2.5s; }
+
+/* Hover effects */
+.technical-skills .bar:hover {
+  background-color: #1e293b;
+  transform: translateY(0) scaleX(1.02);
+  transition: transform 0.3s ease;
+}
+
+.technical-skills .bar:hover::before {
+  background-image: linear-gradient(90deg, #3b82f6, rgba(255,255,255,0.3) 50%, #3b82f6);
+  background-size: 200% 100%;
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.6);
+  animation: highlightWipe 1s ease-in-out forwards;
+}
+
+@keyframes highlightWipe {
+  from { background-position: -200% 0; }
+  to   { background-position: 200% 0; }
+}
+
+/* Tooltip */
 .tooltip {
   position: absolute;
   top: -30px;
@@ -88,122 +169,19 @@
   transform: translateY(0);
 }
 
-.technical-skills .bar span {
-  position: absolute;
-  right: 20px;
-  color: #fff;
-}
-
-.bar::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: var(--bar-width, 0%);
-  background: linear-gradient(to right, #3b82f6 50%, #1e3a8a 50%);
-  border-radius: 20px;
-  transform-origin: left;
-  transition: width 1s ease;
-  z-index: -1;
-}
-
-.bar.animate-bar::before {
-  animation: fillBar 1s ease forwards;
-}
-
-.bar.html::before {
-  width: 90%;
-}
-.bar.css::before {
-  width: 85%;
-}
-.bar.js::before {
-  width: 80%;
-}
-.bar.react::before {
-  width: 75%;
-}
-.bar.node::before {
-  width: 70%;
-}
-.bar.mysql::before {
-  width: 65%;
-}
-.bar.cpp::before {
-  width: 60%;
-}
-.bar.express::before {
-  width: 60%;
-}
-.bar.tensorflow::before {
-  width: 70%;
-}
-.bar.pytorch::before {
-  width: 65%;
-}
-.bar.scikit::before {
-  width: 75%;
-}
-.bar.keras::before {
-  width: 60%;
-}
-.bar.opencv::before {
-  width: 55%;
-}
-
-.bar.html {
-  animation-delay: 0.1s;
-}
-.bar.css {
-  animation-delay: 0.3s;
-}
-.bar.js {
-  animation-delay: 0.5s;
-}
-.bar.react {
-  animation-delay: 0.7s;
-}
-.bar.node {
-  animation-delay: 0.9s;
-}
-.bar.mysql {
-  animation-delay: 1.1s;
-}
-.bar.cpp {
-  animation-delay: 1.3s;
-}
-.bar.express {
-  animation-delay: 1.5s;
-}
-.bar.tensorflow {
-  animation-delay: 1.7s;
-}
-.bar.pytorch {
-  animation-delay: 1.9s;
-}
-.bar.scikit {
-  animation-delay: 2.1s;
-}
-.bar.keras {
-  animation-delay: 2.3s;
-}
-.bar.opencv {
-  animation-delay: 2.5s;
+.bar:hover::before {
+  filter: brightness(1.2);
+  box-shadow: 0 0 10px #3b82f6;
 }
 
 @keyframes slideFromTop {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+  0%   { transform: translateY(-50px); opacity: 0; }
+  100% { transform: translateY(0);     opacity: 1; }
 }
 
-/* ===== PROFESSIONAL SKILLS ===== */
+/* ============================================
+   PROFESSIONAL SKILLS (Circles)
+   ============================================ */
 .circle-grid {
   display: flex;
   flex-direction: row;
@@ -227,113 +205,14 @@
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transform: scale(0.8); /* start smaller */
+  transform: scale(0.8);
   animation: growCircle 0.6s ease forwards;
   transition: transform 0.3s ease;
-}
-.bar i {
-  margin-right: 8px;
-  color: #3b82f6;
-}
-/* Slide in from left */
-@keyframes slideInFromLeft {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-/* Bounce when filling */
-@keyframes bounceFill {
-  0% {
-    width: 0%;
-  }
-  60% {
-    width: var(--bar-width);
-    transform: scaleX(1.1);
-  }
-  100% {
-    width: var(--bar-width);
-    transform: scaleX(1);
-  }
-}
-
-.bar.animate-bar::before {
-  background: #3b82f6; /* single blue color */
-  animation: slideInFromLeft 0.6s ease-out forwards,
-    bounceFill 1s ease-out forwards 0.6s;
-}
-/* 1) Enlarge bar slightly on hover */
-.technical-skills .bar:hover {
-  transform: translateY(0) scaleX(1.02);
-  transition: transform 0.3s ease;
-}
-
-/* 2) Pulse glow on the fill pseudo-element */
-.technical-skills .bar:hover::before {
-  box-shadow: 0 0 8px rgba(59, 130, 246, 0.6);
-  transition: box-shadow 0.3s ease;
-}
-
-/* 3) Tooltip rise and fade in faster */
-.technical-skills .bar:hover .tooltip {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-/* 4) Change background slightly on hover */
-.technical-skills .bar:hover {
-  background-color: #1e293b; /* a darker shade behind the blue fill */
-}
-
-/* 5) Add a brief “wipe” highlight moving left to right */
-@keyframes highlightWipe {
-  from {
-    background-position: -200% 0;
-  }
-  to {
-    background-position: 200% 0;
-  }
-}
-.technical-skills .bar:hover::before {
-  background-image: linear-gradient(
-    90deg,
-    #3b82f6,
-    rgba(255, 255, 255, 0.3) 50%,
-    #3b82f6
-  );
-  background-size: 200% 100%;
-  animation: highlightWipe 1s ease-in-out forwards;
-}
-
-.bar .percent {
-  position: absolute;
-  right: 15px;
-  top: 0;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  font-weight: bold;
-  z-index: 3;
-  color: white;
 }
 
 .circle:hover {
   transform: scale(1.08);
   box-shadow: 0 0 15px #3b82f6;
-}
-
-.circle.top {
-  animation: riseDown 1s ease forwards;
-}
-
-.circle.bottom {
-  animation: riseUp 1s ease forwards;
 }
 
 .circle span {
@@ -351,40 +230,31 @@
   bottom: 0;
   left: 0;
   width: 200%;
-  height: 0; /* Start at 0, fill up later */
+  height: 0;
   background: rgba(30, 144, 255, 0.6);
   border-radius: 40%;
   transform: translateX(-25%);
   z-index: 1;
 }
-@keyframes fillUp {
-  from {
-    height: 0%;
-  }
-  to {
-    height: var(--target-height);
-  }
-}
+
 @keyframes growCircle {
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+  to { opacity: 1; transform: scale(1); }
 }
 
 @keyframes waveAnimate {
-  0% {
-    transform: translateX(-25%) translateY(0);
-  }
-  50% {
-    transform: translateX(0%) translateY(3px);
-  }
-  100% {
-    transform: translateX(-25%) translateY(0);
-  }
+  0%   { transform: translateX(-25%) translateY(0); }
+  50%  { transform: translateX(0%)   translateY(3px); }
+  100% { transform: translateX(-25%) translateY(0); }
 }
 
-/* ===== MOBILE RESPONSIVENESS ===== */
+@keyframes fillUp {
+  from { height: 0%; }
+  to   { height: var(--target-height); }
+}
+
+/* ============================================
+   MOBILE RESPONSIVENESS
+   ============================================ */
 @media (max-width: 768px) {
   .skills-wrapper {
     justify-content: center;

@@ -1,6 +1,4 @@
-/* ============================================
-   CORE RESET & BASE STYLES (Consolidated)
-   ============================================ */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -38,9 +36,9 @@ a {
   font-weight: 700;
   color: #00aaff;
   text-align: center;
-  padding-top: 120px;
-  padding-bottom: 120px;
-  margin-top: 180px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  margin-top: 0px;
 }
 
 /* ============================================
@@ -405,7 +403,7 @@ body::before {
 .about-section {
   margin-left: 65px;
   margin-right: 65px;
-  margin-bottom: 500px;
+  margin-bottom: 50px;
   padding-left: 40px;
   padding-right: 40px;
   max-width: 1350px;
@@ -575,7 +573,7 @@ body::before {
    SKILLS SECTION
    ============================================ */
 .skills-section {
-  margin-top: 500px;
+margin-top: 380px; /* reduce top height */
   margin-left: 70px;
   margin-right: 70px;
   padding-left: 50px;
@@ -980,7 +978,8 @@ body::before {
    SERVICES SECTION
    ============================================ */
 .services-section {
-  padding-top: 30px;
+  padding-top: 12px; /* reduce top height */
+
   padding-left: 80px;
   margin-left: 80px;
   margin-right: 80px;
@@ -1104,11 +1103,11 @@ body::before {
    CONTACT SECTION
    ============================================ */
 #contact {
-  padding-top: 0px;
-  margin: 5px auto 20rem;
+  padding-top: 70px; /* give more height so content never gets clipped */
+  margin: 5px auto 8rem; /* reduce huge bottom spacing that can cause overlap/cropping */
   max-width: 1200px;
   margin-top: 5px;
-  padding-bottom: 80px;
+  padding-bottom: 120px; /* add extra bottom breathing room */
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 30px;
   box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 0 60px rgba(59, 130, 246, 0.2);
@@ -1119,6 +1118,7 @@ body::before {
   transform: translateY(100px);
   transition: 1s;
 }
+
 
 #contact.visible {
   opacity: 1;

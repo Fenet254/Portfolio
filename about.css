@@ -1,33 +1,22 @@
-/* about.css */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
+/* ============================================
+   ABOUT SECTION
+   ============================================ */
 .about-section {
   margin-left: 65px;
   margin-right: 65px;
-  margin-bottom: 500px;
+  margin-bottom: 40px;
   padding-left: 40px;
   padding-right: 40px;
-  max-width: 1350px;
   padding-bottom: 180px;
-  background-color: rgba(0 0 0/0.6);
+  max-width: 1350px;
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 30px;
   box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 0 60px rgba(59, 130, 246, 0.2);
   box-sizing: border-box;
   position: relative;
   z-index: 1;
 }
-section-tit {
-  font-size: 3rem; /* Large size */
-  font-weight: 700;
-  color: #00aaff;
-  text-align: center;
-  padding-top: 120px;
-  padding-bottom: 140px;
-  margin-top: 180px;
-}
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -48,32 +37,128 @@ section-tit {
   animation: bounce 4s infinite;
 }
 
-@keyframes slideIn {
-  from {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+@keyframes slideFromTop {
+  from { transform: translateY(-20px); opacity: 0; }
+  to   { transform: translateY(0);     opacity: 1; }
 }
 
-@keyframes slideOut {
-  from {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  to {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
+.description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  color: #ccc;
 }
 
-#about-panel {
-  display: none;
+/* ============================================
+   ABOUT INFO BUTTONS
+   ============================================ */
+.about-links-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  flex-wrap: wrap;
+  position: relative;
 }
 
+.info-column {
+  text-align: center;
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-btn {
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #00aaff;
+  transition: background 0.3s ease;
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+}
+
+.info-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 2px;
+  width: 0;
+  background: #00aaff;
+  transition: all 0.25s ease;
+}
+
+.info-btn:hover {
+  color: #00aaff;
+  font-weight: 700;
+  transform: scale(1.1);
+  text-decoration: underline;
+  z-index: 2;
+}
+
+.info-btn:hover::after,
+.info-btn.active::after {
+  width: 100%;
+  opacity: 1;
+}
+
+.info-btn.active {
+  color: #00aaff;
+  text-decoration: underline;
+  transform: scale(1.15);
+  z-index: 2;
+}
+
+/* ============================================
+   INFO DETAIL POPUP
+   ============================================ */
+.info-detail {
+  width: 240px;
+  height: 240px;
+  background: rgba(0, 170, 255, 0.1);
+  border-radius: 18px;
+  margin-top: 50px;
+  padding: 1rem;
+  font-size: 15px;
+  color: #ccc;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 25px rgba(0, 170, 255, 0.5);
+  overflow-y: auto;
+  position: absolute;
+  top: 100%;
+  left: 60%;
+  transform: translateX(-50%) translateY(20px);
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.4s ease, transform 0.5s ease;
+  pointer-events: none;
+  line-height: 1.5;
+}
+
+.info-detail.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+  animation: bounceIn 0.6s ease;
+  z-index: 10;
+}
+
+@keyframes bounceIn {
+  0%   { transform: translateX(-50%) translateY(40px);  opacity: 0; }
+  60%  { transform: translateX(-50%) translateY(-10px); opacity: 1; }
+  100% { transform: translateX(-50%) translateY(0); }
+}
+
+/* ============================================
+   MORE ABOUT ME PANEL
+   ============================================ */
 .more-about-me {
   position: fixed;
   top: 0;
@@ -130,141 +215,11 @@ section-tit {
   background: rgba(0, 0, 0, 0.1);
 }
 
-.description {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 40px;
-  color: #ccc;
-}
-
-.about-links-grid {
-  display: flex;
-  justify-content: space-between;
-  gap: 25px;
-  flex-wrap: wrap;
-  position: relative;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.info-column {
-  text-align: center;
-  position: relative;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.info-btn {
-  display: block;
-  cursor: pointer;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #00aaff;
-  transition: background 0.3s ease;
-  position: relative;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 15px;
-}
-
-.info-btn::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  height: 2px;
-  width: 0;
-  background: #00aaff;
-  transition: all 0.25s ease;
-}
-
-.info-btn:hover {
-  color: #00aaff;
-  font-weight: 700;
-  transform: scale(1.1);
-  text-decoration: underline;
-  z-index: 2;
-}
-
-.info-btn:hover::after {
-  width: 100%;
-  opacity: 1;
-}
-
-.info-btn.active {
-  color: #00aaff;
-  text-decoration: underline;
-  transform: scale(1.15);
-  z-index: 2;
-}
-
-.info-btn.active::after {
-  width: 100%;
-  opacity: 1;
-}
-
-.info-detail {
-  width: 240px;
-  height: 240px;
-  background: rgba(0, 170, 255, 0.1);
-  border-radius: 18px;
-  margin-top: 50px;
-  padding: 1rem;
-  font-size: 15px;
-  color: #ccc;
-  backdrop-filter: blur(6px);
-  box-shadow: 0 0 25px rgba(0, 170, 255, 0.5);
-  overflow-y: auto;
-  position: absolute;
-  top: 100%;
-  left: 60%;
-  transform: translateX(-50%) translateY(20px);
-  opacity: 0;
-  z-index: 1;
-  transition: opacity 0.4s ease, transform 0.5s ease;
-  pointer-events: none;
-  line-height: 1.5;
-}
-
-.info-detail.show {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
-  pointer-events: auto;
-  animation: bounceIn 0.6s ease;
-  z-index: 10;
-}
-
-@keyframes fadeSlideUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes bounceIn {
-  0% {
-    transform: translateX(-50%) translateY(40px);
-    opacity: 0;
-  }
-  60% {
-    transform: translateX(-50%) translateY(-10px);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(-50%) translateY(0);
-  }
-}
+/* ============================================
+   CONTAINER — fixed spacing
+   ============================================ */
 .container {
-  /* Each section fills the full screen height */
-  padding: 80px 20px; /* Top & bottom spacing inside section */
-  margin-bottom: 400px; /* Space between sections */
-
+  padding: 20px;       /* was 80px 20px — caused huge top space in skills */
+  margin-bottom: 40px; /* was 400px — caused huge gap between sections */
   box-sizing: border-box;
 }

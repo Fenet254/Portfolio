@@ -1,7 +1,7 @@
 /* ---------- Layout backbone (unchanged) ---------- */
 
 .services-section {
-  padding-top: 30px;
+  padding-top: 10px;
   padding-left: 80px;
   margin-left: 80px;
   margin-right: 80px;
@@ -35,16 +35,16 @@
 
 .section-tagline {
   text-align: center;
+  margin-top: 1.0rem;
   font-size: 1.8rem;
   opacity: 0.75;
-  margin-top: 3rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2.0rem;
   color: white;
 }
 
 .services-grid {
   display: grid;
-  gap: 6rem;
+  gap: 4rem;
   grid-template-columns: repeat(2, 1fr);
   padding-left: 30px;
   padding-right: 30px;
